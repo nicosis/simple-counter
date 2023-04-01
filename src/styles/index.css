@@ -3,7 +3,7 @@ body {
 }
 
 .contenedor {
-max-width: 790px;
+  max-width: 760px;
   height: 200px;
   border: 2px solid white;
   border-radius: 20px;
@@ -14,23 +14,60 @@ max-width: 790px;
   justify-content: end;
   align-items: center;
   padding: 15px;
+}
+
+.shadow {
+  text-shadow: 0 0 10px rgb(0, 255, 0), 0 0 20px rgb(0, 255, 0),
+    0 0 30px rgb(0, 255, 0);
   color: white;
 }
 
 .digito {
   font-family: "Share Tech Mono", monospace;
   font-size: 180px;
-  text-shadow: 0 0 10px rgb(0, 255, 0), 0 0 20px rgb(0, 255, 0), 0 0 30px rgb(0, 255, 0);
   margin: 5px;
 }
 
-.icon {
-    animation: parpadeo 1s infinite backwards;
+.panel {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5px;
+  font-size: 30px;
+}
+
+.panel-btn {
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.panel-btn:active {
+  text-shadow: none;
+}
+
+.fli-1 {
+  animation: parpadeo 1s infinite backwards;
+  animation-delay: 0.5s;
+}
+.fli-2 {
+  animation: parpadeo 1s infinite backwards;
+  animation-delay: 1s;
+}
+.fli-3 {
+  animation: parpadeo 1s infinite backwards;
+  animation-delay: 1.5s;
+}
+.fli-4 {
+  animation: parpadeo 1s infinite backwards;
+  animation-delay: 2s;
+}
+.fli-5 {
+  animation: parpadeo 1s infinite backwards;
+  animation-delay: 2.5s;
 }
 
 @keyframes parpadeo {
-    to {
-        text-shadow: none;
-        color: rgb(0, 0, 0);
-    }
+  to {
+    text-shadow: none;
+    color: rgb(0, 0, 0);
+  }
 }
