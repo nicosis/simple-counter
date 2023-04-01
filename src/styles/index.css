@@ -3,7 +3,7 @@ body {
 }
 
 .contenedor {
-max-width: 800px;
+max-width: 790px;
   height: 200px;
   border: 2px solid white;
   border-radius: 20px;
@@ -31,6 +31,6 @@ max-width: 800px;
 @keyframes parpadeo {
     to {
         text-shadow: none;
-        color: rgb(39, 39, 39);
+        color: rgb(0, 0, 0);
     }
 }
